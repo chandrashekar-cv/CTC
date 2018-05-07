@@ -1,7 +1,5 @@
 package strings;
 
-import java.util.Stack;
-
 public class ReverseAString {
 
 	public static void main(String[] args) {

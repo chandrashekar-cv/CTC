@@ -1,1 +1,5 @@
-Prepare yourself for interviews with some of the standard coding problems.
+Coding interview prep material.
+Source of problems:
+	Cracking the coding interview.
+	Leetcode
+	GeeksForGeeks

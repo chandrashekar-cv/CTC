@@ -68,15 +68,15 @@ public class CourseSchedule {
 		queue.addAll(start);
 		
 		int courseCount =0;
-		
+		int res[] = new int[numCourses];
 		//Will hold topological order (one possible solution)
-		List<Integer> topologicalOrder = new ArrayList<>();
+		
 		
 		while(!queue.isEmpty()) {
 			int node = queue.poll();
 			courseCount++;
 			//keep order of satisfied courses.
-			topologicalOrder.add(node);
+			res[courseCount++] = node;
 			for(int v: adj[node]) {
 				indegree[v]--;
 				//Add course to queue to finish only if all its dependant courses are done => indegree =0
@@ -86,6 +86,8 @@ public class CourseSchedule {
 		}
 		//If any course has dependency which can't be satisfied, it will never be added to queue.
 		//So courseCount < numCourses. So you will not be completing all courses => false
+		
+		
 		return courseCount==numCourses;
 		
 	}

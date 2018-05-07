@@ -33,7 +33,7 @@ public class LinkedListLoopdetection {
 		
 		while(head!=runner) {
 			head = head.next;
-			runner = runner.next.next;
+			runner = runner.next;
 		}
 		
 		return runner;

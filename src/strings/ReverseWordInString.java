@@ -1,14 +1,26 @@
 package strings;
 
-import java.util.HashSet;
-import java.util.Set;
+
+/*
+Example:  
+
+Input: "the sky is blue",
+Output: "blue is sky the".
+Notes:
+
+A word is defined as a sequence of non-space characters.
+Input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
+You need to reduce multiple spaces between two words to a single space in the reversed string.
+Follow up: For C programmers, try to solve it in-place in O(1) space.
+
+*/
 
 public class ReverseWordInString {
 
 	public static void main(String[] args) {
 		ReverseWordInString sol = new ReverseWordInString();
 		sol.reverseWords2(new char[] {'x','y','z',' ','a','b',' ','b','c'});
-		Set<String> v = new HashSet<>();
+		
 		
 		
 
